@@ -1,0 +1,17 @@
+function moveZeros (arr){
+let lastIndex=arr.length-1
+
+for(i=arr.length-1;i>=0;i--){
+    if(arr[i]===0){
+        let indexValue=arr[lastIndex]
+        arr[lastIndex]=arr[i]
+        arr[i]=indexValue
+        
+        lastIndex--
+    }
+}
+return arr;
+}
+
+let a = [0, 1, 0, 3, 12];
+console.log(moveZeros(a))
