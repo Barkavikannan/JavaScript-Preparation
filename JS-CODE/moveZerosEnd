@@ -1,3 +1,5 @@
+//move zeros to end(in-place)
+
 function moveZeros (arr){
 let lastIndex=arr.length-1
 
@@ -15,3 +17,24 @@ return arr;
 
 let a = [0, 1, 0, 3, 12];
 console.log(moveZeros(a))
+
+
+
+//2nd method by using array
+
+tharuney by using built-in functions
+
+
+let a=[0,1,0,3,0,0,12];
+let result=[];
+let LastIndex=a.length-1;
+
+for(let i=0;i<a.length;i++){
+    if(a[i]!=0){
+        result.unshift(a[i]);
+    }
+    else{
+        result.push(a[i]);
+    }
+}
+console.log(result)
