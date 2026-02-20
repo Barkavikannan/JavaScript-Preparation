@@ -17,7 +17,4 @@ function NonRepeatingChar(str){
     }
 }
 
-
-
-
 console.log(NonRepeatingChar("abcab"));
