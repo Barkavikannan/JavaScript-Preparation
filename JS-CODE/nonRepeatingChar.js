@@ -11,7 +11,7 @@ function NonRepeatingChar(str){
             }
         }
         if(count===1){
-            returnstr[i];
+            return str[i];
             break;
         }
     }
