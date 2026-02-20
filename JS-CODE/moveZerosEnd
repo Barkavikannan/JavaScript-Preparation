@@ -22,9 +22,6 @@ console.log(moveZeros(a))
 
 //2nd method by using array
 
-tharuney by using built-in functions
-
-
 let a=[0,1,0,3,0,0,12];
 let result=[];
 let LastIndex=a.length-1;
