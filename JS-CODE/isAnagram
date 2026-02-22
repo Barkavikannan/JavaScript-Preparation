@@ -1,0 +1,30 @@
+//check anagram
+
+function isAnagram(str1,str2){
+    
+    let c=0;
+
+    if(str1.length != str2.length){
+        return "false";
+    }
+    for(let i=0;i<str1.length;i++){
+        for(let j=0;j<str2.length;j++){
+            if(str1[i]===str2[j]){
+                c++;
+                break;
+            }
+        }
+    }
+    
+    if(str1.length===c){
+        return "true";
+    }
+    else{
+        return "false";
+    }
+}
+
+let s1= "listen";
+let s2= "silent";
+
+console.log(isAnagram(s1,s2))
