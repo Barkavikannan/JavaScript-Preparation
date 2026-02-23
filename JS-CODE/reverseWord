@@ -1,0 +1,36 @@
+//reverse a word in a sentence 
+
+// input: hello world
+// output: world hello
+
+function reverseWord(str){
+    let word ="";
+    let temp=[];
+    let s=0;
+    for(let i=0 ; i<str.length; i++){
+        if(str[i]!==" "){
+            word+=str[i];
+        }
+       else { 
+           temp.push(word);
+           word="";
+       }
+    }
+    if (word){
+        temp.push(word);
+    }
+    
+    let result ="";
+    for(let j=temp.length-1 ; j>=0;j--){
+         result+=temp[j];
+        if(j>0){
+        result+=" ";
+        }
+    }
+    
+    console.log(temp);
+    console.log(result);
+}
+
+let sentence="hello world"
+reverseWord(sentence);
