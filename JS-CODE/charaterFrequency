@@ -1,0 +1,20 @@
+//character frequency
+
+function charFreq(str){
+    for(let char of str){
+    if(obj[char]){
+        obj[char]++;
+    }
+    else{
+        obj[char]=1;
+    }
+}
+
+console.log(obj);
+}
+
+let str="aabbc";
+
+let obj={};
+charFreq(str);
+
