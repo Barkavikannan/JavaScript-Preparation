@@ -1,0 +1,20 @@
+// check palindrome
+
+let str1="malayalam" ;
+console.log(isPalindrome(str1));
+
+function isPalindrome(str){
+    let rev="";
+    for(let i=str.length-1;i>=0;i--){
+        rev+=str[i];
+    }
+    console.log("reversed string:", rev);
+    console.log("original string:", str);
+    
+    if(str===rev){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
