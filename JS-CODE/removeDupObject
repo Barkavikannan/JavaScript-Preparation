@@ -1,0 +1,19 @@
+// 3.Remove duplicate objects by id 
+
+arr= [{id:1,name:"A"},{id:2,name:"B"},{id:1,name:"A"}];
+
+console.log(removeDup(arr));
+
+function removeDup(a){
+    const obj={};
+    
+    for(let char in a){
+        if(!obj[a[char].id]){
+            obj[a[char].id]=true;
+        }
+        else{
+            a.splice(char);
+        }
+    }
+    return a;
+}
